@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>用户登录</title>
+    <style>
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    li{
+        list-style: none;
+    }
+    body{
+        background-color: #e22000;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        height:100vh;
+        background-image: linear-gradient(to top,rgb(252, 71, 71),#e22000);
+    }
+    .wrap{
+        width: 300px;
+        height: 320px;
+        padding: 20px;
+        /* margin: 100px auto; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* background-color: rgb(243, 26, 26); */
+        box-shadow: 0 0 5px #e22000;
+        border: 1px solid white;
+        /* background-image: linear-gradient(to top,rgb(252, 71, 71),red);  */
+        background-color: transparent;
+        border-radius: 5px;
+    }
+    h2{
+        color: white;
+        margin-bottom: 22px;
+        font-size: 25px;
+    }
+    .box{
+        position: relative;
+       width: 100%;
+    }
+    button{
+            margin-top: 15px;
+            /* margin-left: 70px; */
+            width: 70px;
+            height: 30px;
+            background-color: rgb(239, 248, 240);
+            border: none;
+            border-radius: 3px;
+            font-size: 16px;
+        }
+    #ipt1{
+        font-size: 18px;
+        padding: 10px 0;
+        /* padding-bottom: 5px; */
+        outline: none;
+        border: none;
+        width: 100%;
+        color: white;
+        background-color: transparent;
+        border-bottom: 1px solid #ffffff;
+        margin-bottom: 20px;
+    }
+    label{
+        position: absolute;
+        left: 0;
+        top: 0;
+        padding: 10px 0;
+        pointer-events: none;
+        transition: all 0.5s;
+        font-size: 18px;
+        color: white;
+    }
+    .wrap .box #ipt1:focus + label,
+    .wrap .box #ipt1:valid + label
+    {
+        top: -22px;
+        color: rgb(34, 34, 39);
+        font-size: 18px;
+    }
+    .bu{
+        width: 180px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    #mian{
+        margin-top: 5px;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        font-size: 18px;
+        height: 30px;
+        color: white;
+    }
+    </style>
+</head>
+<body>
+    <!-- <img src="img/portcut/favicon.jpg" alt=""> -->
+    <div class="wrap">
+        <h2>用户登录</h2>
+        <div class="box">
+            
+            <input type="text" id="ipt1" required="required">
+            <label for="ipt">用户名</label>
+            
+        </div>
+        <div class="box">
+            
+            <input type="password" id="ipt1" required="required">
+            <label for="ipt1">密&nbsp;&nbsp;&nbsp;码</label>
+        </div>
+        <div id="mian">
+                <input type="checkbox" id="ipt2">&nbsp;30天免登录
+        </div>
+        <div class="bu">
+            <button id="btn">登录</button>
+            <a href="file:///D:/PHPnow-1.5.6/htdocs/%E4%BA%91%E9%9F%B3%E4%B9%90%E5%95%86%E5%9F%8E/zhece.html"><button id="btn">去注册</button></a>
+        </div>
+        
+    </div>
+</body>
+</html>
